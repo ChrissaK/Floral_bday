@@ -1,0 +1,103 @@
+body{
+  font-family: 'Amatic SC', cursive;
+  /* font-family: 'Mali', cursive; */
+}
+#container{
+  color: #eee;
+  text-transform: uppercase;
+  text-align: center;
+  max-height: 100%;
+  width: 50%;
+  /* height: auto; */
+  overflow: auto;
+  border: 2px solid white;
+  padding: 1%;
+  margin-top: 5%;
+}
+.centered {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -55%);
+}
+img.bg {
+  /* Set rules to fill background */
+  min-height: 100%;
+  min-width: 1024px;
+
+  /* Set up proportionate scaling */
+  width: 100%;
+  height: auto;
+
+  /* Set up positioning */
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+#SurpriseBtn{
+  text-decoration: none;
+  background-color: #FFE5CE;
+  padding: 10px 15px;
+  border: 2px solid #542323;
+  border-radius: 10px;
+  font-family: 'Amatic SC', cursive;
+  font-size: 2em;
+  font-weight: 300;
+}
+#SurpriseBtn:hover{
+  cursor: pointer;
+}
+#SurpriseBtn:focus{
+    color: white;
+}
+h1{
+  font-size: 250%;
+  font-weight: bolder;
+  /* font-stretch: extra-condensed; */
+}
+
+#wish{
+  margin-top: 10%;
+}
+#wish p{
+  font-size: 180%;
+}
+#sophie{
+  display: block;
+  width: 50%;
+  /* height: auto; */
+  margin: auto;
+  /* border: 2px solid white; */
+}
+#flower{
+  width: 5%;
+  /* transition: transform .1s; */
+}
+
+@media screen and (min-width: 825px) {
+  #container{
+    display: flex;
+    width: 60%;
+    margin: 10px;
+  }
+  #column1{
+    width: 50%;
+    position: relative;
+  }
+  #column2{
+    width: 50%;
+  }
+  #wish{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    margin: 0;
+  }
+  #sophie{
+    width: 100%;
+    height: auto;
+    margin: 0;
+  }
+
+}
