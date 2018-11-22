@@ -111,7 +111,7 @@ h1{
   }
 }
 /* make font-size smaller for smartphones */
-@media screen and (min-width : 320px) and (max-width : 480px) {
+@media screen and (min-width : 320px) and (max-width : 580px) {
   #wish p{
     font-size: 1.5em;
   }
