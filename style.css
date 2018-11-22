@@ -64,7 +64,7 @@ h1{
 }
 #sophie{
   display: block;
-  width: 50%;
+  width: 60%;
   /* height: auto; */
   margin: auto;
   /* border: 2px solid white; */
@@ -101,17 +101,31 @@ h1{
   }
 }
 /* make font-size bigger for bigger screen */
-@media screen and (min-width: 1070px){
+@media screen and (min-width: 1050px){
   #wish p{
     font-size: 2em;
+  }
+  h1{
+    font-size: 2.5em;
+    margin-left: 0px;
   }
 }
 /* make font-size smaller for smartphones */
-@media screen and (min-device-width : 320px) and (max-device-width : 480px) {
+@media screen and (min-width : 320px) and (max-width : 480px) {
   #wish p{
-    font-size: 1.8em;
+    font-size: 1.5em;
   }
   h1{
     font-size: 2em;
+    /* color: blue; */
+  }
+  #sophie{
+    width: 75%;
+  }
+  .centered{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-35%, -50%);
   }
 }
