@@ -73,6 +73,12 @@ h1{
   width: 5%;
   /* transition: transform .1s; */
 }
+footer{
+  position: fixed;
+  bottom: 0px;
+  right: 10px;
+  text-transform: lowercase;
+}
 
 @media screen and (min-width: 825px) {
   #container{
