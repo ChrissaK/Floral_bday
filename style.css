@@ -51,7 +51,7 @@ img.bg {
     color: white;
 }
 h1{
-  font-size: 250%;
+  font-size: 2em;
   font-weight: bolder;
   /* font-stretch: extra-condensed; */
 }
@@ -102,6 +102,12 @@ h1{
 }
 /* make font-size bigger for bigger screen */
 @media screen and (min-width: 1070px){
+  #wish p{
+    font-size: 2em;
+  }
+}
+/* make font-size smaller for smartphones */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
   #wish p{
     font-size: 2em;
   }
