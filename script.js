@@ -10,12 +10,12 @@ setInterval(followMouse, 50); //executes function followMouse every 50 msec
 
 var mouse = {x:0, y:0}; //mouse.x, mouse.y
 
-function getMouse(el){
+function getMouse(el){ //gets the mouse coordinates on the page
   mouse.x = el.pageX;
   mouse.y = el.pageY;
 }
 
-function followMouse(){
+function followMouse(){ //updates flower position so as to follow the mouse
   //1. find distance X , distance Y
   var distX = mouse.x - flowerpos.x;
   var distY = mouse.y - flowerpos.y;
@@ -27,9 +27,3 @@ function followMouse(){
   flower.style.left = flowerpos.x + "px";
   flower.style.top = flowerpos.y + "px";
 }
-//
-// // var surprise_button = document.getElementById("SurpriseBtn");
-// // surprise_button.addEventListener("click",function(){
-// //   console.log("Mpla");
-// //   window.open("card.html");
-// // }, false);
